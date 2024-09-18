@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "scrapy-selenium"
+version = "0.0.7"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+scrapy = "^2.0.0"
+selenium = "^4.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+coverage = "^7.6.1"
+pytest-cov = "^5.0.0"
+codeclimate-test-reporter = "0.2.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
