@@ -15,11 +15,11 @@ class SeleniumMiddleware:
 
     def __init__(
         self,
-        driver_name,
-        driver_executable_path,
-        browser_executable_path,
-        command_executor,
-        driver_arguments,
+        driver_name: str,
+        driver_executable_path: str,
+        browser_executable_path: str,
+        command_executor: str,
+        driver_arguments: list,
     ):
         """Initialize the selenium webdriver
 
@@ -29,12 +29,12 @@ class SeleniumMiddleware:
             The selenium ``WebDriver`` to use
         driver_executable_path: str
             The path of the executable binary of the driver
-        driver_arguments: list
-            A list of arguments to initialize the driver
         browser_executable_path: str
             The path of the executable binary of the browser
         command_executor: str
             Selenium remote server endpoint
+        driver_arguments: list
+            A list of arguments to initialize the driver
         """
 
         webdriver_base_path = f"selenium.webdriver.{driver_name}"
